@@ -1,16 +1,12 @@
 import angular from 'angular';
-import uirouter from '@uirouter/angularjs'; // 'ui.router'
-// import uirouter from 'angular-ui-router';
-
-console.log('>>>>>>>>', uirouter);
+import uirouter from '@uirouter/angularjs';
 
 import '../style/app.css';
 
 import routing from '../app.config';
-import contacts from '../modules/contacts'; // возвращает имя модуля myApp.contacts
+import contacts from '../modules/contacts';
 
 var myApp = angular.module('myApp', [
-    // 'ui.router',
     uirouter,
     contacts
     // 'ngMaterial',
